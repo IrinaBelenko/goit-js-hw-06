@@ -14,6 +14,7 @@ function getRandomHexColor() {
 function createBoxes(amount) {
   for (let i = 1; i <= amount; i += 1) {
     const size = 30 + 10 * (i - 1);
+    
     const divEL = document.createElement("div");
     divEL.style.width = `${size}px`;
     divEL.style.height = `${size}px`;
@@ -25,7 +26,6 @@ function createBoxes(amount) {
 
 function create() {
   const inputValue = document.querySelector("input").value;
-  console.log(inputValue);
   const amount = Number(inputValue);
   createBoxes(amount);
 }
